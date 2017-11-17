@@ -22,7 +22,7 @@ microservice.service("confirmOrderService", function($http, $location, loginServ
 		};
 
 		var responsePromise = $http({
-			url : "http://ms-api-gateway-toto.apps.oc.smatine.com/isadco/tempAppApiGateway/api/order/orders/createOrder",		
+			url : "http://ms-api-gateway-toto.apps.oc.smatine.com/api/order/orders/createOrder",		
 			method : "POST",
 			data : orderdetails,
 			headers : {
@@ -52,7 +52,7 @@ microservice.service("confirmOrderService", function($http, $location, loginServ
 		};
 
 		var responsePromise = $http({
-			url : "http://ms-api-gateway-toto.apps.oc.smatine.com/isadco/tempAppApiGateway/api/order/orders/previousOrders",			
+			url : "http://ms-api-gateway-toto.apps.oc.smatine.com/api/order/orders/previousOrders",			
 			method : "POST",
 			data : previousorders,
 			headers : {
