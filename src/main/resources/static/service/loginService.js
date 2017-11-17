@@ -91,7 +91,7 @@ microservice.service("loginService", function($http) {
 
 		var responsePromise = $http({
 			
-			url : "http://ms-api-gateway-toto.apps.oc.smatine.com/isadco/tempAppApiGateway/api/customer/customerService/login",
+			url : "http://ms-api-gateway-toto.apps.oc.smatine.com/api/customer/customerService/login",
 			method : "POST",
 			data : user,
 			headers : {
