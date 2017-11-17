@@ -25,7 +25,7 @@ microservice
 					this.getdata = function(callbackData) {
 
 						var responsePromise = $http
-								.get("http://ms-api-gateway-toto.apps.oc.smatine.com/isadco/tempAppApiGateway/api/product/products/all");
+								.get("http://ms-api-gateway-toto.apps.oc.smatine.com/api/product/products/all");
 						responsePromise.success(function(data, status, headers,
 								config) {
 							callbackData(data);
