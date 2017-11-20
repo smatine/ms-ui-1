@@ -1,0 +1,48 @@
+<br>
+<br><br>
+<body onLoad="load_data()">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.23.0/css/patternfly.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.23.0/css/patternfly-additions.min.css" />
+
+	<!-- Black Header -->
+
+
+	<div class="container-fluid ng-controller="descriptionController" ng-init="getAllDescription()">
+
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+
+			<!--  Tab SSO Dashaboard -->
+			
+			<div role="tabpanel" class="tab-pane active" id="sso">
+
+
+				<div id="tab-sso-content" style="width: 45%; float: left;">
+					<div class="row">
+					
+						<div class=" col-sm-6 ">
+							<!-- Olá Service -->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Description du site</h3>
+									(Spring Boot)
+								</div>
+								<div id="ola-service-secured" class="panel-body">{{ola}}</div>
+							</div>
+						</div>
+					</div>
+					
+					<a id="refresh-sso2" href="#description" data-ng-click="getAllDescription()"><span class="pficon pficon-refresh"></span>Refresh Results</a>
+				</div>
+				
+			</div>
+			
+
+
+			
+		</div>
+	</div>
+
+</body>
+

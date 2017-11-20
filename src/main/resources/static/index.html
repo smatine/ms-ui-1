@@ -13,16 +13,20 @@
 <script src="lib/angular-cookies.min.js"></script>
 <script src="lib/angular-cookies.js"></script>
 <script src="app/app.js"></script>
+
 <script src="controller/homeController.js"></script>
+<script src="controller/descriptionController.js"></script>
 <script src="controller/productController.js"></script>
 <script src="controller/loginController.js"></script>
 <script src="controller/confirmOrderController.js"></script>
 <script src="controller/registerController.js"></script>
 <script src="controller/successController.js"></script>
+<script src="service/descriptionService.js"></script>
 <script src="service/loginService.js"></script>
 <script src="service/productService.js"></script>
-<script src="service/registerService.js"></script>
 <script src="service/confirmOrderService.js"></script>
+<script src="service/registerService.js"></script>
+
 
 
 <style>
@@ -92,8 +96,8 @@ body {
 
 				<ul class="nav navbar-nav navbar-right">
 
-					
-					<li><a href="#trackingOrder"><spa class="glyphicon glyphicon-map-marker"></span> ProductCatalog </a></li>
+				    <li><a href="#description" data-ng-click="getAllDescription()"><span class="glyphicon glyphicon-map-marker"></span> Description </a></li>
+					<li><a href="#trackingOrder"><span class="glyphicon glyphicon-map-marker"></span> ProductCatalog </a></li>
 				 	<li><a href="#login"  data-ng-show="!isLogin"><span class="glyphicon glyphicon-log-in"> Login </span></a></li>
 					<li><a href="#logout"  data-ng-click = "logout()" ng-show="isLogin"><span class="glyphicon glyphicon-log-out"> Logout </span></a></li>
 					<li><a href="#profile" data-ng-click ="profile()" ng-show="isLogin"><span class="glyphicon glyphicon-user">Welcome {{welcomeuser}}</span></a></li>				

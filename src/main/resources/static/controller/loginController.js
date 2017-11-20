@@ -1,4 +1,4 @@
-microservice.controller('loginController',function($scope, $location, $route,loginService,productService,confirmOrderService,$cookieStore) {
+microservice.controller('loginController',function($scope, $location, $route,loginService,productService,confirmOrderService, $cookieStore) {
  	$scope.error = false;
 	$scope.isLogin = false;
 	$scope.productOrdered = productService.getProductSelected();

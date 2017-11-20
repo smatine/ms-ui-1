@@ -54,7 +54,12 @@ microservice.config(['$routeProvider', function($routeProvider) {
 
 	})
 	
+   .when('/description', {
+		templateUrl : 'views/desc.html',
+		controller : "descriptionController"
 
+	})
+	
 	.otherwise({
 		redirectTo : '/'
 
