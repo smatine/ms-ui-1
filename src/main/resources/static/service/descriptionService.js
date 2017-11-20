@@ -12,6 +12,17 @@ microservice.service('descriptionService', function($http, $location, $cookieSto
 						});
 					};
 					
+						this.getAllDescription2 = function(callback) {
+					    
+						var responsePromise = $http.get("http://aloha-helloworld-msa.apps.oc.smatine.com/api/aloha");
+						responsePromise.success(function(data, status, headers, config) {
+							callback(data);
+						});
+						responsePromise.error(function(data, status, headers, config) {
+									alert("AJAX failed! because no webservice is attached yet");
+						});
+					};
+					
 					
 
 				});

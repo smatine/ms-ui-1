@@ -5,17 +5,13 @@ microservice.controller('descriptionController', function($scope, $location, $ro
 		descriptionService.getAllDescription(function(d) {
 			$scope.ola=d;	
 		});
-		
+		$scope.aloha="loding ....";
+		descriptionService.getAllDescription2(function(d) {
+			$scope.aloha=d;	
+		});
 		//$location.path("/description");
 	}
 	 
 
-    $scope.getAllDescription2 = function() {
-         $scope.ola="loding ....";
-		descriptionService.getAllDescription(function(d) {
-			$scope.ola=d;	
-		});
-		
-		//$location.path("/description");
-	}
+   
 });
