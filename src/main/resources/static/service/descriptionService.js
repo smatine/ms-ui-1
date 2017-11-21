@@ -3,7 +3,8 @@ microservice.service('descriptionService', function($http, $location, $cookieSto
 				    
 					this.getAllDescription = function(callback) {
 					    
-						var responsePromise = $http.get("http://ola-helloworld-msa.apps.oc.smatine.com/api/ola");
+						//var responsePromise = $http.get("http://ola-helloworld-msa.apps.oc.smatine.com/api/ola");
+						var responsePromise = $http.get("http://bonjour-helloworld-msa.apps.oc.smatine.com/api/bonjour");
 						responsePromise.success(function(data, status, headers, config) {
 							callback(data);
 						});
